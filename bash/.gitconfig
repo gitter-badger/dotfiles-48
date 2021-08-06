@@ -12,7 +12,7 @@
 	rebase = true
 [commit]
 	verbose = true
-	gpgsign = true
+	gpgsign = false
 [core]
 	excludesfile = /Users/jdve/.gitignore_global
 [user]

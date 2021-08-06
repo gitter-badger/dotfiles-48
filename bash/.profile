@@ -25,6 +25,11 @@ if [ -d "$HOME/.local/sbin" ]; then
    PATH="$HOME/.local/sbin:$PATH"
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
 if [ -d "$HOME/.config/git-fuzzy" ]; then
    PATH="$HOME/.config/git-fuzzy/bin:$PATH"
 fi
@@ -32,4 +37,3 @@ fi
 # set some defaults
 export EDITOR="vim"
 export PAGER="less -r"
-
